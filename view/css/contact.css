@@ -1,0 +1,14 @@
+.card {
+    transition: all 0.3s;
+    filter: none; /* par défaut, aucun flou */
+}
+  
+.card.flou {
+    z-index: -1;
+    filter: blur(2px); /* flou sur les éléments non survolés */
+}
+  
+.card.survole {
+    transform: scale(1.35); /* agrandissement de l'élément survolé */
+    background-color: #123456;
+}

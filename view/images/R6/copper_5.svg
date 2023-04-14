@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   id="svg911"
+   version="1.1"
+   height="500"
+   width="500">
+  <metadata
+     id="metadata917">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs915" />
+  <symbol
+     viewBox="-250.5 -250.36 501 501"
+     id="a">
+    <path
+       id="path873"
+       stroke-linejoin="round"
+       stroke-linecap="round"
+       d="M141.62 99.36c5.5 0 10 4.5 10 10v22.8c0 5.5-4.5 10-10 10H-141.6c-5.5 0-10-4.5-10-10v-22.8c0-5.5 4.5-10 10-10H141.6z"
+       stroke-miterlimit="10"
+       stroke-width="10"
+       stroke="#C8C8C8"
+       fill="none" />
+    <path
+       id="path875"
+       d="M29.66 203.5L-.92 172.92-31.5 203.5h-141.7V80.84h344.57V203.5z"
+       fill="none" />
+    <path
+       id="path877"
+       d="M-135-122.7L0-200.64l135 77.94v230.54h-270z"
+       fill="#7C2B00" />
+    <path
+       id="path879"
+       stroke-linejoin="round"
+       stroke-linecap="round"
+       d="M0 142.17l-28.6 40.68L0 199.35l28.6-16.5z"
+       stroke-miterlimit="10"
+       stroke-width="10"
+       stroke="#C8C8C8"
+       fill="none" />
+    <path
+       id="path881"
+       opacity=".5"
+       d="M-122.53-130.96l43.44-26.58-26.9 26.9V69.3h-16.53v-200.28zM106 69.32V-132.4l-29.52-26.73 46.04 28.16v200.3H106z"
+       fill="#7C2B00" />
+    <path
+       id="path883"
+       opacity=".25"
+       d="M-106 68.4v39.44h-16.53v-39.5m245.06 0v39.5H106v-39.8"
+       fill="#7C2B00" />
+  </symbol>
+  <symbol
+     viewBox="-250.5 -250.5 501 501"
+     id="b">
+    <path
+       id="path886"
+       opacity=".25"
+       d="M67.5-87.55V37.03h-135V-87.55L0-126.53z" />
+    <path
+       id="path888"
+       d="M73.6-65.63v173.47H-73.6V-65.63L0-108.13z" />
+    <g
+       id="g892"
+       fill="#fff">
+      <path
+         id="path890"
+         d="M-45.02-47.67v93.9h17.7v-93.9h-17.7zM15.03-47.97l-17.7 94.2h17.7l6.9-39.3 3.15-21.9 3 21.75 7.05 39.45h17.1l-17.55-94.2H15.03z" />
+    </g>
+    <path
+       id="path894"
+       d="M135 99.25l-135 .1-135-.1v-222.1L0-200.77l135 77.94z"
+       fill="none" />
+  </symbol>
+  <symbol
+     id="symbol901"
+     viewBox="-251.5 -251.36 503 503">
+    <path
+       id="path897"
+       d="M250-249.86h-500v500h500zM-250 250.14l500-500M250 250.14l-500-500"
+       stroke-miterlimit="10"
+       stroke-width="3"
+       stroke="#231F20"
+       fill="none" />
+    <path
+       id="path899"
+       d="M-173.2 99.36L0 199.36l173.2-100v-200L0-200.64l-173.2 100z"
+       stroke-miterlimit="10"
+       stroke-width="10"
+       stroke="#f00"
+       fill="none" />
+  </symbol>
+  <g
+     id="g909">
+    <g
+       id="g907">
+      <use
+         id="use903"
+         overflow="visible"
+         transform="matrix(1 0 0 -1 256.5 252.334)"
+         xlink:href="#a"
+         y="-250.36"
+         x="-250.5"
+         height="501"
+         width="501" />
+      <use
+         id="use905"
+         overflow="visible"
+         transform="matrix(1 0 0 -1 256.5 252.334)"
+         xlink:href="#b"
+         y="-250.5"
+         x="-250.5"
+         height="501"
+         width="501" />
+    </g>
+  </g>
+  <rect
+     y="203.37469"
+     x="207.4879"
+     height="100.74773"
+     width="103.74395"
+     id="rect1477"
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="path4"
+     style="fill:#ffffff"
+     d="m 246.93189,300.28677 -17.7,-94.2 h 17.7 l 6.9,39.3 3.15,21.9 3,-21.75 7,-39.45 h 17.1 l -17.55,94.2 z" />
+</svg>
