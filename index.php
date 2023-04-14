@@ -38,17 +38,21 @@ if((isset($_SESSION['log']))){
   <header class="p-3">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <img src="view/images/cota-logo.png" class="rounded-circle" alt="Logo de CoTa" width="60" height="auto">
         <!-- Nav (début) -->
           <nav class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="index.php" class="nav-link px-2 text-secondary">Accueil</a></li>
-            <li><a href="view/calendar.php" class="nav-link px-2 text-white">Rendez-vous</a></li>
-            <li><a href="view/galerie.php" class="nav-link px-2 text-white">Galerie</a></li>
-            <li><a href="view/team.php" class="nav-link px-2 text-white">Notre staff</a></li>
-            <li><a href="view/contact.php" class="nav-link px-2 text-white">Contact</a></li>
-            <?php if((isset($_SESSION['log']['userNiveauID'] )) && ($_SESSION['log']['userNiveauID'] == 1)){ 
-              echo '<li><a href="view/admin.php" class="nav-link px-2 text-white">Admin</a></li>';}?>
+            <ul class="list-unstyled d-flex flex-row justify-content-center flex-wrap align-items-center">
+              <li class="nav-item"><a href="index.php" class="nav-link px-2 text-secondary"><img src="view/images/cota-logo.png" class="rounded-circle align-self-center" alt="Logo de CoTa" width="60" height="auto"></a></li>
+              <li class="nav-item"><a href="view/calendar.php" class="nav-link px-2 text-white">Rendez-vous</a></li>
+              <li class="nav-item"><a href="view/galerie.php" class="nav-link px-2 text-white">Galerie</a></li>
+              <li class="nav-item"><a href="view/team.php" class="nav-link px-2 text-white">Notre staff</a></li>
+              <li class="nav-item"><a href="view/contact.php" class="nav-link px-2 text-white">Contact</a></li>
+              <?php if((isset($_SESSION['log']['userNiveauID'])) && ($_SESSION['log']['userNiveauID'] == 1)){ ?>
+                <li class="nav-item"><a href="view/admin.php" class="nav-link px-2 text-white">Admin</a></li>
+              <?php } ?>
+            </ul>
           </nav>
+
+
           
           <!-- Nav (fin) -->
 
@@ -91,7 +95,7 @@ if((isset($_SESSION['log']))){
               </div>  
               <div class="offcanvas-body">
               <main class="form-signin w-100 m-auto">
-                <form action="controller\inscription.php" method="post" id="inscriptionForm">
+                <form action="controller/inscription.php" method="post" id="inscriptionForm">
                   <h2 class="h3 mb-3 fw-normal text-white text-center">Inscrivez-vous !</h2>
 
                   <div class="form-floating mb-3">

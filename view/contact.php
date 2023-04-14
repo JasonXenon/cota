@@ -22,15 +22,18 @@ session_start();
 <header>
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="../index.php" class="nav-link px-2 text-white">Accueil</a></li>
-          <li><a href="calendar.php" class="nav-link px-2 text-white">Rendez-vous</a></li>
-          <li><a href="galerie.php" class="nav-link px-2 text-white">Galerie</a></li>
-          <li><a href="team.php" class="nav-link px-2 text-white">Notre staff</a></li>
-          <li><a href="contact.php" class="nav-link px-2 text-secondary">Contact</a></li>
-          <?php if((isset($_SESSION['log']['userNiveauID'] )) && ($_SESSION['log']['userNiveauID'] == 1)){ 
-            echo '<li><a href="admin.php" class="nav-link px-2 text-white">Admin</a></li>';}?>
-        </ul>
+      <nav class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <ul class="list-unstyled d-flex flex-row justify-content-center flex-wrap align-items-center">
+              <li class="nav-item"><a href="../index.php" class="nav-link px-2 text-secondary"><img src="images/cota-logo.png" class="rounded-circle align-self-center" alt="Logo de CoTa" width="60" height="auto"></a></li>
+              <li class="nav-item"><a href="calendar.php" class="nav-link px-2 text-white">Rendez-vous</a></li>
+              <li class="nav-item"><a href="galerie.php" class="nav-link px-2 text-white">Galerie</a></li>
+              <li class="nav-item"><a href="team.php" class="nav-link px-2 text-white">Notre staff</a></li>
+              <li class="nav-item"><a href="contact.php" class="nav-link px-2 text-white">Contact</a></li>
+              <?php if((isset($_SESSION['log']['userNiveauID'])) && ($_SESSION['log']['userNiveauID'] == 1)){ ?>
+                <li class="nav-item"><a href="view/admin.php" class="nav-link px-2 text-white">Admin</a></li>
+              <?php } ?>
+            </ul>
+          </nav>
 
 
         <button <?php if(isset($_SESSION['log'])){echo "style='display:none;'";}?> type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" class="btn btn-outline-light me-2">Se connecter</button>
@@ -74,7 +77,7 @@ session_start();
               </div>  
               <div class="offcanvas-body">
               <main class="form-signin w-100 m-auto">
-                <form action="../controller\inscription.php" method="post" id="inscriptionForm">
+                <form action="../controller/inscription.php" method="post" id="inscriptionForm">
                   <h2 class="h3 mb-3 fw-normal text-white text-center">Inscrivez-vous !</h2>
 
                   <div class="form-floating mb-3">
