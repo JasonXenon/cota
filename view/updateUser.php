@@ -64,7 +64,7 @@ if (isset($_SESSION['log']['userID'])) {
                     </div>
                     <div class="d-flex justify-content-between">
                         <button type="submit" class="btn btn-primary me-auto">Modifier</button>
-                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">Supprimer mon compte</button>
+                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">Supprimer le compte</button>
                     </div>
                 </form>
 
@@ -84,7 +84,7 @@ if (isset($_SESSION['log']['userID'])) {
                         <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Annuler</button>
                         <form action="../controller/deleteAccount.php?pk=<?= $_POST["pk"] ?>" method="post">
                             <input type="hidden" value=<?= $data["userID"]; ?> name="pk" >
-                            <button type="submit" class="btn btn-outline-danger">Oui, supprimer mon compte</button>
+                            <button type="submit" class="btn btn-outline-danger">Oui, supprimer le compte</button>
                         </form>
                     </div>
                     </div>
@@ -102,7 +102,7 @@ if(isset($_SESSION['userPseudo'])) { // V√©rifier si un utilisateur est connect√
 <div class="container mt-5">
     <p class="h2 mb-4">Mes rendez-vous :</p>
     <?php if ($rdvs): ?>
-        <table class="table table-hover table-dark">
+        <table class="table table-hover table-dark table-responsive">
             <thead>
                 <tr>
                     <th>Date</th>
