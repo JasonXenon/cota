@@ -1,6 +1,12 @@
 <?php
 
+include '../model/read.php';
+
 session_start();
+
+if((isset($_SESSION['log']))){
+  $data = readCurrentUser();
+}
 
 ?>
 
@@ -30,7 +36,7 @@ session_start();
               <li class="nav-item"><a href="team.php" class="nav-link px-2 text-white">Notre staff</a></li>
               <li class="nav-item"><a href="contact.php" class="nav-link px-2 text-white">Contact</a></li>
               <?php if((isset($_SESSION['log']['userNiveauID'])) && ($_SESSION['log']['userNiveauID'] == 1)){ ?>
-                <li class="nav-item"><a href="view/admin.php" class="nav-link px-2 text-white">Admin</a></li>
+                <li class="nav-item"><a href="admin.php" class="nav-link px-2 text-white">Admin</a></li>
               <?php } ?>
             </ul>
           </nav>
@@ -125,7 +131,7 @@ session_start();
           <?php if (isset($_SESSION['log'])): ?>
               <div class="d-flex justify-content-end align-items-center">
                 <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px;">
-                  <?= $_SESSION['userPseudo']; ?>
+                  <?= $data['userPseudo']; ?>
                 </div>
               </div>
             <?php endif; ?>
