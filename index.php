@@ -156,7 +156,7 @@ if((isset($_SESSION['log']))){
             <?php if (isset($_SESSION['log'])): ?>
               <div class="d-flex justify-content-end align-items-center">
                 <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px;">
-                  <?= $_SESSION['userPseudo']; ?>
+                  <?= $data['userPseudo']; ?>
                 </div>
               </div>
             <?php endif; ?>
