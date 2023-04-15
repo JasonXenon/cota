@@ -72,7 +72,7 @@ function updateBlockType($blockType){
      }
 }
 
-function updateUser($infos, $pk) {
+function updateUser($infos, $pk, $ancien_pseudo) {
     include('connection.php');
     $query = "UPDATE ifo_user
               SET userNom = :nom,
@@ -88,6 +88,12 @@ function updateUser($infos, $pk) {
     try{
         $stmt = $db->prepare($query);
         $result = $stmt->execute($query_params);
+        
+        // Ajout de la requête pour mettre à jour la table ifo_rdv
+        $query_rdv = "UPDATE ifo_rdv SET rdv_pseudo = :nouveau_pseudo WHERE rdv_pseudo = :ancien_pseudo";
+        $query_params_rdv = array(':nouveau_pseudo' => $infos["pseudo"], ':ancien_pseudo' => $ancien_pseudo);
+        $stmt_rdv = $db->prepare($query_rdv);
+        $result_rdv = $stmt_rdv->execute($query_params_rdv);
     }
     catch(PDOException $ex){
         die("Failed query : " . $ex->getMessage());

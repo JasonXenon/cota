@@ -60,14 +60,15 @@ function readUser($pseudo){
      return $result;
   }
   
-  function readRdvs($user_id) {
+  function readRdvs() {
     include "connection.php";
+    $currentUser = readCurrentUser();
     $query = "SELECT rdv.*, jeu.jeu_nom
               FROM ifo_rdv rdv
               INNER JOIN ifo_jeu jeu ON rdv.rdv_jeu_id = jeu.jeu_id
               WHERE rdv.rdv_pseudo = :pseudo";
     $query_params = array(
-        ":pseudo" => $_SESSION['userPseudo']
+        ":pseudo" => $currentUser['userPseudo']
     );
     try {
         $stmt = $db->prepare($query);
@@ -80,6 +81,7 @@ function readUser($pseudo){
     $result = $stmt->fetchAll();
     return $result;
 }
+
 
   function readRdvAndJeuInfos() {
     include 'connection.php';

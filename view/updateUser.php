@@ -23,6 +23,10 @@ $data = readUserPk($_POST['pk']);
 
 $jeux = readGame();
 
+$pseudoByRdv = readRdvAndJeuInfos();
+
+$pseudoByUser = readCurrentUser();
+
 if (isset($_SESSION['log']['userID'])) {
     // Lire les rendez-vous de l'utilisateur connecté
     $rdvs = readRdvs($_SESSION['log']['userID']);
@@ -61,6 +65,7 @@ if (isset($_SESSION['log']['userID'])) {
                     <div class="mb-3">
                         <label for="pseudo" class="form-label">Pseudo</label>
                         <input type="text" name="pseudo" class="form-control" id="pseudo" placeholder="Entrez votre pseudo" value=<?= $data["userPseudo"]; ?> >
+                        <input type="hidden" name="pseudo_old" class="form-control" id="pseudo" placeholder="Entrez votre pseudo" value=<?= $data["userPseudo"]; ?> >
                     </div>
                     <div class="d-flex justify-content-between">
                         <button type="submit" class="btn btn-primary me-auto">Modifier</button>
@@ -96,9 +101,8 @@ if (isset($_SESSION['log']['userID'])) {
         </div>
 
         <?php 
-if(isset($_SESSION['userPseudo'])) { // Vérifier si un utilisateur est connecté en vérifiant la présence de la variable de session 'user_id'
-    if(isset($_POST['user_form'])) { // Vérifier si l'utilisateur vient du formulaire 'user_form'
-?>
+        if(isset($pseudoByUser['userPseudo']) && isset($_POST['user_form'])) { // Vérifier si un utilisateur est connecté en vérifiant la présence de la variable de session 'user_id' et s'il vient du formulaire 'user_form'
+    ?>
 <div class="container mt-5">
     <p class="h2 mb-4">Mes rendez-vous :</p>
     <?php if ($rdvs): ?>
@@ -143,9 +147,9 @@ if(isset($_SESSION['userPseudo'])) { // Vérifier si un utilisateur est connect�
     <?php endif; ?>
 </div>
 <?php 
-    } // Fermer la condition pour vérifier si l'utilisateur vient du formulaire 'user_form'
-} // Fermer la condition pour vérifier si un utilisateur est connecté
-?>
+    } // Fermer la condition pour vérifier si un utilisateur est connecté et s'il vient du formulaire 'user_form'
+?> 
+
 
 
 
