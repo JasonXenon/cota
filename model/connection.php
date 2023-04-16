@@ -1,6 +1,8 @@
 <?php
     //PAGE DE CONNECTION A LA DB
 
+
+
     $username = "root";
     $password = "";
     $host = "localhost";

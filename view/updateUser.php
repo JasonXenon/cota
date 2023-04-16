@@ -133,7 +133,7 @@ if (isset($_SESSION['log']['userID'])) {
                             <?php if ($rdv['confirmation_status'] != 'Accepté'): ?>
                                 <form method="post" action="../controller/updateAppointment.php">
                                     <input type="hidden" name="pk" value="<?= $rdv['rdv_id']; ?>">
-                                    <input type="hidden" value="refuse" name="status" >
+                                    <input type="hidden" value="cancel" name="status" >
                                     <button type="submit" class="btn btn-danger">Annuler</button>
                                 </form>
                             <?php endif; ?>

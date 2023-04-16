@@ -8,9 +8,13 @@ $status = $_POST['status'];
 // Construction de la requête pour mettre à jour le statut
 if ($status == "accept") {
     $query = "UPDATE ifo_rdv SET confirmation_status = 'Accepté' WHERE rdv_id = :rdv_id";
+} elseif ($status == "cancel") {
+    $query = "DELETE FROM ifo_rdv WHERE rdv_id = :rdv_id";
 } else {
-    $query = "UPDATE ifo_rdv SET confirmation_status = 'À reporté' WHERE rdv_id = :rdv_id";
+    $query = "UPDATE ifo_rdv SET confirmation_status = 'À reporter' WHERE rdv_id = :rdv_id";
 }
+
+
 
 $query_params = array(':rdv_id' => $rdv_id);
 
