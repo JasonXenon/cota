@@ -44,7 +44,7 @@ $rdv = readPendingAppointments();
               <li class="nav-item"><a href="team.php" class="nav-link px-2 text-white">Notre staff</a></li>
               <li class="nav-item"><a href="contact.php" class="nav-link px-2 text-white">Contact</a></li>
               <?php if((isset($_SESSION['log']['userNiveauID'])) && ($_SESSION['log']['userNiveauID'] == 1)){ ?>
-                <li class="nav-item"><a href="view/admin.php" class="nav-link px-2 text-white">Admin</a></li>
+                <li class="nav-item"><a href="view/admin.php" class="nav-link px-2 text-secondary">Admin</a></li>
               <?php } ?>
             </ul>
           </nav>

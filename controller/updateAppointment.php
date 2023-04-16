@@ -9,7 +9,7 @@ $status = $_POST['status'];
 if ($status == "accept") {
     $query = "UPDATE ifo_rdv SET confirmation_status = 'Accepté' WHERE rdv_id = :rdv_id";
 } else {
-    $query = "DELETE from ifo_rdv WHERE rdv_id = :rdv_id";
+    $query = "UPDATE ifo_rdv SET confirmation_status = 'À reporté' WHERE rdv_id = :rdv_id";
 }
 
 $query_params = array(':rdv_id' => $rdv_id);

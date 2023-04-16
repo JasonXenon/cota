@@ -34,7 +34,7 @@ if((isset($_SESSION['log']))){
               <li class="nav-item"><a href="calendar.php" class="nav-link px-2 text-white">Rendez-vous</a></li>
               <li class="nav-item"><a href="galerie.php" class="nav-link px-2 text-white">Galerie</a></li>
               <li class="nav-item"><a href="team.php" class="nav-link px-2 text-white">Notre staff</a></li>
-              <li class="nav-item"><a href="contact.php" class="nav-link px-2 text-white">Contact</a></li>
+              <li class="nav-item"><a href="contact.php" class="nav-link px-2 text-secondary">Contact</a></li>
               <?php if((isset($_SESSION['log']['userNiveauID'])) && ($_SESSION['log']['userNiveauID'] == 1)){ ?>
                 <li class="nav-item"><a href="admin.php" class="nav-link px-2 text-white">Admin</a></li>
               <?php } ?>

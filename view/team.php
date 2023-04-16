@@ -31,7 +31,7 @@ if((isset($_SESSION['log']))){
               <li class="nav-item"><a href="../index.php" class="nav-link px-2 text-secondary"><img src="images/cota-logo.png" class="rounded-circle align-self-center" alt="Logo de CoTa" width="60" height="auto"></a></li>
               <li class="nav-item"><a href="calendar.php" class="nav-link px-2 text-white">Rendez-vous</a></li>
               <li class="nav-item"><a href="galerie.php" class="nav-link px-2 text-white">Galerie</a></li>
-              <li class="nav-item"><a href="team.php" class="nav-link px-2 text-white">Notre staff</a></li>
+              <li class="nav-item"><a href="team.php" class="nav-link px-2 text-secondary">Notre staff</a></li>
               <li class="nav-item"><a href="contact.php" class="nav-link px-2 text-white">Contact</a></li>
               <?php if((isset($_SESSION['log']['userNiveauID'])) && ($_SESSION['log']['userNiveauID'] == 1)){ ?>
                 <li class="nav-item"><a href="view/admin.php" class="nav-link px-2 text-white">Admin</a></li>
