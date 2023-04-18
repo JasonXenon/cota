@@ -9,6 +9,10 @@ if((isset($_SESSION['log']))){
   $data = readCurrentUser();
 }
 
+$success = isset($_GET['success']) ? $_GET['success'] : '';
+
+$error = isset($_GET['error']) ? $_GET['error'] : '';
+
 ?>
 
 
@@ -31,6 +35,24 @@ if((isset($_SESSION['log']))){
     Notre site utilise des cookies pour améliorer votre expérience utilisateur. En continuant à naviguer sur notre site, vous acceptez notre politique en matière de cookies.
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
+
+  <?php if (!empty($success)): ?>
+    <!-- Afficher le message dans une alerte Bootstrap -->
+    <div class="alert alert-success" role="alert">
+        <?php echo htmlspecialchars($success); ?>
+    </div>
+<?php endif; ?>
+
+<?php if (!empty($error)): ?>
+    <!-- Afficher le message dans une alerte Bootstrap -->
+    <div class="alert alert-danger" role="alert">
+        <?php echo htmlspecialchars($error); ?>
+    </div>
+<?php endif; ?>
+
+
+
+
 
 
   <!-- Header (début) -->

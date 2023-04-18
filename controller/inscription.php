@@ -27,25 +27,25 @@ if(isset($data['nom']) && isset($data['prenom']) && isset($data['pseudo']) && is
 				//on appelle des fonctions pour insérer dans la table users les infos du formulaire et les lier avec un profil
 				insertUser($data, $mdp);
 				insertProfile($data);
-				header('Location: ../index.php?message=Enregistrer');
+				header('Location: ../index.php?success=Enregistrer');
             
 						}else{
 							header('Location:../index.php?error=Les mot de passe ne corresponde pas');
 							}
 						} else{
-							header('Location:../index.php?message=Mot de passe trop court');
+							header('Location:../index.php?error=Mot de passe trop court');
 					}
 							} else{
-								header('Location:../index.php?message=Pseudo trop court');
+								header('Location:../index.php?error=Pseudo trop court');
 						}
 					}else{
-						header('Location:../index.php?message=Format Email invalide');
+						header('Location:../index.php?error=Format Email invalide');
 						}
 				}else{
-					header('Location:../index.php?erreur=Un des champs requis est vide');
+					header('Location:../index.php?error=Un des champs requis est vide');
 					}
 			}else{
-				header('Location:../index.php?erreur=nice try zebi');
+				header('Location:../index.php?error=Bien essayé');
 				}
 
 ?>

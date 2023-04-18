@@ -32,16 +32,16 @@ if(isset($data['pseudo']) && isset($data['pass'])){
 				$_SESSION['profileBio'] = $value['profileBio'];
 		}
 	
-	header('Location: ../index.php?profileID='.$_SESSION['profileID'].'profileAvatar='.$_SESSION['profileAvatar'].'userPseudo='.$_SESSION['userPseudo']/*.'loguserpseudo='.$_SESSION['log']['userPseudo']*/);
+	header('Location: ../index.php?profileID='.$_SESSION['profileID'].'profileAvatar='.$_SESSION['profileAvatar'].'userPseudo='.$_SESSION['userPseudo'] . '&success=' . urlencode('Vous êtes connecté'));
       
 	  }else{
-        header('Location: ../index.php?erreur=Pseudo ou mot de passe incorrect');
+        header('Location: ../index.php?error=Pseudo ou mot de passe incorrect');
 		}
     }else{
-      header('Location: ../index.php?erreur=Au moins un des champs requis est vide');
+      header('Location: ../index.php?error=Au moins un des champs requis est vide');
 		}
 }else{
-    header('Location: ../index.php?erreur=Bien essayé');
+    header('Location: ../index.php?error=Bien essayé');
 	}
 
 
