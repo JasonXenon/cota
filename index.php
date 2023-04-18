@@ -148,24 +148,24 @@ if((isset($_SESSION['log']))){
             </a>
 
             <?php if (isset($_SESSION['log'])): 
-  $userPseudo = $data['userPseudo'];
-  $pseudoLength = strlen($userPseudo);
-  $minWidth = 20; // La largeur minimale pour le rectangle
-  $maxWidth = 200; // La largeur maximale pour le rectangle
-  $charWidth = 10; // La largeur approximative de chaque caractère
-  $rectangleWidth = $minWidth + ($charWidth * $pseudoLength); // Largeur initiale du rectangle
-  if ($rectangleWidth > $maxWidth) {
-    $rectangleWidth = $maxWidth;
-  }
-  $rectangleHeight = 40; // Hauteur du rectangle, dans cet exemple, la hauteur est fixe à 40px
-  
-?>
-  <div class="d-flex justify-content-end align-items-center">
-    <div class="rounded bg-primary text-white d-flex align-items-center justify-content-center me-3" style="width: <?= $rectangleWidth ?>px; height: <?= $rectangleHeight ?>px; padding: <?= ($rectangleHeight - 30)/2 ?>px;">
-      <?= $userPseudo; ?>
-    </div>
-  </div>
-<?php endif; ?>
+            $userPseudo = $data['userPseudo'];
+            $pseudoLength = strlen($userPseudo);
+            $minWidth = 20; // La largeur minimale pour le rectangle
+            $maxWidth = 200; // La largeur maximale pour le rectangle
+            $charWidth = 10; // La largeur approximative de chaque caractère
+            $rectangleWidth = $minWidth + ($charWidth * $pseudoLength); // Largeur initiale du rectangle
+            if ($rectangleWidth > $maxWidth) {
+              $rectangleWidth = $maxWidth;
+            }
+            $rectangleHeight = 40; // Hauteur du rectangle, dans cet exemple, la hauteur est fixe à 40px
+            
+          ?>
+            <div class="d-flex justify-content-end align-items-center">
+              <div class="rounded bg-primary text-white d-flex align-items-center justify-content-center me-3" style="width: <?= $rectangleWidth ?>px; height: <?= $rectangleHeight ?>px; padding: <?= ($rectangleHeight - 30)/2 ?>px;">
+                <?= $userPseudo; ?>
+              </div>
+            </div>
+          <?php endif; ?>
 
 
       </div>
