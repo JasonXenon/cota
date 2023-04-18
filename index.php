@@ -141,25 +141,33 @@ if((isset($_SESSION['log']))){
               <input <?php if(!isset($_SESSION['log'])){echo "style='display:none;'";}?> type="submit" class="btn btn-outline-light me-2" value="Modifier mes données">
             </form>
 
-            <!-- Bouton Profil -->
-
-            <a href='view/profileView.php'>
-              <button <?php if(!isset($_SESSION['log'])){echo "style='display:none;'";}?> class='btn btn-outline-light me-2'>Profil</button>
-            </a>
-
             <!-- Bouton Déconnxion -->
 
             <a href='controller/unlog.php'>
              <button <?php if(!isset($_SESSION['log'])){echo "style='display:none;'";}?> class='btn btn-outline-light me-2'>Déconnexion</button>
             </a>
 
-            <?php if (isset($_SESSION['log'])): ?>
-              <div class="d-flex justify-content-end align-items-center">
-                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px;">
-                  <?= $data['userPseudo']; ?>
-                </div>
-              </div>
-            <?php endif; ?>
+            <?php if (isset($_SESSION['log'])): 
+  $userPseudo = $data['userPseudo'];
+  $pseudoLength = strlen($userPseudo);
+  $minWidth = 20; // La largeur minimale pour le rectangle
+  $maxWidth = 200; // La largeur maximale pour le rectangle
+  $charWidth = 10; // La largeur approximative de chaque caractère
+  $rectangleWidth = $minWidth + ($charWidth * $pseudoLength); // Largeur initiale du rectangle
+  if ($rectangleWidth > $maxWidth) {
+    $rectangleWidth = $maxWidth;
+  }
+  $rectangleHeight = 40; // Hauteur du rectangle, dans cet exemple, la hauteur est fixe à 40px
+  
+?>
+  <div class="d-flex justify-content-end align-items-center">
+    <div class="rounded bg-primary text-white d-flex align-items-center justify-content-center me-3" style="width: <?= $rectangleWidth ?>px; height: <?= $rectangleHeight ?>px; padding: <?= ($rectangleHeight - 30)/2 ?>px;">
+      <?= $userPseudo; ?>
+    </div>
+  </div>
+<?php endif; ?>
+
+
       </div>
 
 

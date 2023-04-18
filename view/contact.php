@@ -141,7 +141,7 @@ if((isset($_SESSION['log']))){
 
   <div class="container">
   <h1 class="mt-4 mb-3">Contactez-nous</h1>
-  <h3 class="h6 mb-3 text-center">Vous rencontrez un souci quelconques ou vous voulez faire une suggestion pour améliorer notre site ? Retrouvez toutes les informations de contact ci-dessous.</h3>
+  <h3 class="h6 mb-3 text-center">Vous rencontrez un souci quelconque ou vous voulez faire une suggestion pour améliorer notre site ? Retrouvez toutes les informations de contact ci-dessous.</h3>
   <div class="row">
     <div class="col-md-4 mt-2">
       <div class="card border border-success bg-dark text-white">

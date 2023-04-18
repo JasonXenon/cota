@@ -117,9 +117,6 @@ if((isset($_SESSION['log']))){
             </div>
             
             <!-- OffCanvas inscription (fin) -->
-
-		  <a href='view/profile.php'><button <?php if(!isset($_SESSION['log'])){echo "style='display:none;'";}?> class='btn btn-outline-light me-2'>Profil</button>
-		  </a>
            <a href='controller/unlog.php'>
              <button <?php if(!isset($_SESSION['log'])){echo "style='display:none;'";}?> class='btn btn-outline-light me-2'>Déconnexion</button>
           </a>
@@ -146,7 +143,7 @@ if((isset($_SESSION['log']))){
         <div class="face-custom face2-custom">
           <div class="content-custom">
             <p>
-              Jason levecq, coach proffessionnel sur Rainbow Six: Siege !
+              Jason levecq, coach professionnel sur Rainbow Six: Siege !
             </p>
           </div>
         </div>
@@ -161,7 +158,7 @@ if((isset($_SESSION['log']))){
         <div class="face-custom face2-custom">
           <div class="content-custom">
             <p>
-            Anas Rachafi El Hausi, coach proffessionnel sur Valorant !
+            Anas Rachafi El Hausi, coach professionnel sur Valorant !
             </p>
           </div>
         </div>
@@ -176,7 +173,7 @@ if((isset($_SESSION['log']))){
         <div class="face-custom face2-custom">
           <div class="content-custom">
             <p>
-            Matis Derrico, coach proffessionnel sur Counter Strike : Global Offensive !
+            Matis Derrico, coach professionnel sur Counter Strike : Global Offensive !
             </p>
           </div>
         </div>
