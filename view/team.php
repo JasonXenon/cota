@@ -110,6 +110,7 @@ if((isset($_SESSION['log']))){
                     <input type="password" name="pass2" class="form-control text-white bg-dark" id="floatingPassword" placeholder="Confirmation de votre mot de passe">
                     <label for="floatingPassword">Confirmation de votre mot de passe</label>
                   </div>
+                  <p id="password-match"></p>
                   <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">S'inscrire</button>
                 </form>
               </main>
