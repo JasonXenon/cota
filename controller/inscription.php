@@ -27,7 +27,7 @@ if(isset($data['nom']) && isset($data['prenom']) && isset($data['pseudo']) && is
 				//on appelle des fonctions pour insérer dans la table users les infos du formulaire et les lier avec un profil
 				insertUser($data, $mdp);
 				insertProfile($data);
-				header('Location: ../index.php?success=Enregistrer');
+				header('Location: ../index.php?success=Vous êtes inscrit');
             
 						}else{
 							header('Location:../index.php?error=Les mot de passe ne corresponde pas');

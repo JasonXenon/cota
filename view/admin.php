@@ -128,8 +128,6 @@ $data2 = readCurrentUser();
           
           <!-- OffCanvas inscription (fin) -->
 
-    <a href='view/profile.php'><button <?php if(!isset($_SESSION['log'])){echo "style='display:none;'";}?> class='btn btn-outline-light me-2'>Profil</button>
-    </a>
          <a href='../controller/unlog.php'>
            <button <?php if(!isset($_SESSION['log'])){echo "style='display:none;'";}?> class='btn btn-outline-light me-2'>Déconnexion</button>
         </a>

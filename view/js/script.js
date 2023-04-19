@@ -8,9 +8,14 @@ form.pass1.addEventListener("change", function () {
   validPassword(this);
 });
 
+form.pass2.addEventListener("change", function () {
+  comparePasswords();
+});
+
 form.pseudo.addEventListener("change", function () {
   validPseudo(this);
 });
+
 
 const validEmail = function (inputEmail) {
   let emailRegExp = new RegExp(
@@ -77,5 +82,21 @@ const validPseudo = function (inputPseudo) {
     small3.innerHTML = msg2;
     small3.classList.remove("text-success");
     small3.classList.add("text-danger");
+  }
+};
+
+const comparePasswords = function() {
+  let pass1 = form.pass1.value;
+  let pass2 = form.pass2.value;
+  let passwordMatch = document.getElementById('password-match');
+
+  if (pass1 === pass2) {
+    passwordMatch.textContent = 'Les mots de passe sont identiques.';
+    passwordMatch.classList.remove('text-danger');
+    passwordMatch.classList.add('text-success');
+  } else {
+    passwordMatch.textContent = 'Les mots de passe ne correspondent pas.';
+    passwordMatch.classList.remove('text-success');
+    passwordMatch.classList.add('text-danger');
   }
 };

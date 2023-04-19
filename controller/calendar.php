@@ -35,22 +35,22 @@ if (checkValidateDate($data["date"])) {
     $rdvStart = date("Y-m-d h:i:s", strtotime($data['date'].$debut));
     $rdvFin = date("Y-m-d h:i:s", strtotime($data['date'].$fin));
         insertRdv($data, $rdvStart, $rdvFin);
-        header('Location: ../index.php?message=Votre rendez-vous à bien été enregistré&warning=Attention ! Ce n\'est pas parce que votre rendez-vous a bien été pris que celui-ci est validé. Un administateur du site vous contactera pour valider votre rendez-vous.');
+        header('Location: ../index.php?success=Votre rendez-vous à bien été enregistré&warning=Attention ! Ce n\'est pas parce que votre rendez-vous a bien été pris que celui-ci est validé. Un administateur du site vous contactera pour valider votre rendez-vous.');
 }
     else {
-            header('Location: ../index.php?erreur=Le format de date n\'est pas valide');
+            header('Location: ../index.php?error=Le format de date n\'est pas valide');
             }
         } else {
-            header('Location: ../index.php?erreur=Veuillez renseigner une date future');
+            header('Location: ../index.php?error=Veuillez renseigner une date future');
         }
         } else {
-            header('Location: ../index.php?erreur=L\'usurpation est passible de beaucoup de soucis !');
+            header('Location: ../index.php?error=L\'usurpation est passible de beaucoup de soucis !');
         }
     } else {
-        header ('Location: ../index.php?erreur=Un des champs requis est vide');
+        header ('Location: ../index.php?error=Un des champs requis est vide');
     }
 } else{
-     header('Location: ../index.php?erreur=Bien essayé');
+     header('Location: ../index.php?error=Bien essayé');
 }
 
 ?>
