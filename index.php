@@ -13,14 +13,14 @@ $success = isset($_GET['success']) ? $_GET['success'] : '';
 
 $error = isset($_GET['error']) ? $_GET['error'] : '';
 
-?>
-
+?> 
 
 <!doctype html>
 <html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.101.0">
@@ -89,7 +89,7 @@ $error = isset($_GET['error']) ? $_GET['error'] : '';
                 <button type="button" class="btn-close btn-close-white text-right" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
-              <main class="form-signin w-100 m-auto">
+              <section class="form-signin w-100 m-auto">
               <form action="controller/login.php" method="post">
                 <h2 class="h3 mb-3 fw-normal text-white text-center">Connectez-vous !</h2>
 
@@ -103,7 +103,7 @@ $error = isset($_GET['error']) ? $_GET['error'] : '';
                 </div>
                 <button class="w-100 btn btn-lg btn-warning mt-3" type="submit">Se connecter</button>
               </form>
-            </main>
+            </section>
               </div>
             </div>
 
@@ -116,7 +116,7 @@ $error = isset($_GET['error']) ? $_GET['error'] : '';
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>  
               <div class="offcanvas-body">
-              <main class="form-signin w-100 m-auto">
+              <section class="form-signin w-100 m-auto">
                 <form action="controller/inscription.php" method="post" id="inscriptionForm">
                   <h2 class="h3 mb-3 fw-normal text-white text-center">Inscrivez-vous !</h2>
 
@@ -150,7 +150,7 @@ $error = isset($_GET['error']) ? $_GET['error'] : '';
                   <p id="password-match"></p>
                   <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">S'inscrire</button>
                 </form>
-              </main>
+              </section>
               </div>
             </div>
             
@@ -227,13 +227,13 @@ $error = isset($_GET['error']) ? $_GET['error'] : '';
   <!-- Header (fin) -->
 
   <!-- Section Rainbow Six : Siege -->
-
+<main>
   <figure class="container pt-3">
   <div class="row bg-secondary bg-opacity-25 d-flex align-items-center">
     <div class="col-12 col-md-8 p-2">
       <img src="view\images\R6\SI2021_RoadToSI_keyart.jpg" class="img-fluid border border-4 border-success" alt="Championnat du monde de Rainbow six: Siege">
     </div>
-    <div class="col-12 col-md-4 d-flex flex-column justify-content-center">
+    <article class="col-12 col-md-4 d-flex flex-column justify-content-center">
       <h2 class="text-center mb-4">Rainbow Six: Siege</h2>
       <p class="pt-2">Vous voulez améliorer votre jeu et devenir un véritable <span class="fw-bold">pro de Rainbow Six: Siege</span> ? Nos coachs professionnels sont là pour vous aider à atteindre vos objectifs ! Avec leurs années d'expérience et leurs compétences exceptionnelles, ils peuvent vous fournir des conseils personnalisés et des astuces pratiques pour améliorer votre stratégie, votre jeu d'équipe et vos compétences individuelles. Prenez rendez-vous dès maintenant pour un coaching personnalisé et devenez le meilleur joueur de Rainbow Six: Siege que vous pouvez être !</p>
       <div class="h-auto pt-5 d-flex justify-content-center">
@@ -241,7 +241,7 @@ $error = isset($_GET['error']) ? $_GET['error'] : '';
           <button class="btn btn-primary" type="submit">Prendre rendez-vous</button>
         </a>
       </div>
-    </div>
+    </article>
   </div>
 </figure>
 
@@ -256,7 +256,7 @@ $error = isset($_GET['error']) ? $_GET['error'] : '';
   
   <figure class="container pt-2">
   <div class="row bg-secondary bg-opacity-25 align-items-center">
-    <div class="col-12 col-md-6">
+    <article class="col-12 col-md-6">
       <h2 class="text-center mb-4">Valorant</h2>
       <p class="pt-2">Vous souhaitez monter en grade et atteindre <span class="fw-bold">le sommet de la compétition dans Valorant</span> ? Avec l'aide de nos coachs professionnels, vous pouvez améliorer votre jeu, perfectionner votre stratégie et atteindre de nouveaux niveaux de compétences. Réservez dès maintenant votre session de coaching personnalisée et obtenez les conseils avisés d'un professionnel pour prendre une longueur d'avance sur vos adversaires.</p>
       <div class="h-auto pt-5 d-flex justify-content-center">
@@ -264,7 +264,7 @@ $error = isset($_GET['error']) ? $_GET['error'] : '';
           <button class="btn btn-primary" type="submit">Prendre rendez-vous</button>
         </a>
       </div>
-    </div>
+    </article>
     <div class="col-12 col-md-6">
       <img src="view\images\Valorant\V_Logotype_Off-White.png" class="img-fluid" alt="Valorant, un jeu developper par Riot Games">
     </div>
@@ -281,7 +281,7 @@ $error = isset($_GET['error']) ? $_GET['error'] : '';
     <div class="col-12 col-md-8 p-2">
       <img src="view\images\CSGO\counter_strike.jpg" class="img-fluid border border-4 border-success" alt="Counter Strike : Global Offensive, un jeu de tir à la première personne">
     </div>
-    <div class="col-12 col-md-4">
+    <article class="col-12 col-md-4">
     <h2 class="text-center mb-4">Counter Strike : Global Offensive</h2>
       <p class="pt-2">Vous êtes un joueur passionné de Counter Strike: Global Offensive et vous voulez améliorer vos compétences pour devenir un joueur pro ? Nos coachs professionnels sont là pour vous aider à atteindre votre potentiel maximum. Avec des années d'expérience dans l'industrie du jeu vidéo, nos coachs peuvent vous aider à développer vos compétences de jeu, à améliorer votre stratégie et à optimiser votre gameplay. Prenez rendez-vous dès maintenant pour un coaching personnalisé et découvrez comment vous pouvez devenir un <span class="fw-bold">joueur d'élite dans le monde de CS:GO</span></p>
       <div class="h-auto pt-5">
@@ -289,9 +289,10 @@ $error = isset($_GET['error']) ? $_GET['error'] : '';
           <button class="btn btn-primary d-block mx-auto" type="submit">Prendre rendez-vous</button>
         </a>
       </div>
-    </div>
+    </article>
   </div>
 </figure>
+</main>
 
 <!-- Footer -->
 
