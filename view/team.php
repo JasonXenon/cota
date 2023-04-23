@@ -16,6 +16,7 @@ if((isset($_SESSION['log']))){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez nos coachs et administrateurs et familiarisez-vous avec notre environnement. Consultez les informations essentielles sur ceux qui vont vous guider pour améliorer vos compétences de jeu. Visitez notre section 'Staff' pour en savoir plus sur notre équipe dès maintenant.">
     <link href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css' rel='stylesheet'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css">

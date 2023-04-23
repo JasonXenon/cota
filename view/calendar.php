@@ -19,6 +19,7 @@ if((isset($_SESSION['log']))){
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Planifiez votre prochaine session de coaching avec le coach de votre choix grâce à notre section 'Rendez-vous'. Utilisez notre calendrier interactif pour voir les créneaux déjà pris par d\'autres joueurs et réservez votre place dès maintenant. Découvrez comment améliorer vos compétences de jeu grâce à nos experts.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css' rel='stylesheet'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -376,7 +377,6 @@ document.addEventListener('DOMContentLoaded', function() {
       selectable: true,
       firstDay: 1,
       selectMirror: true,
-      dayMaxEvents: true, // allow "more" link when too many events
       events: '../model/fetchEvents.php',
       displayEventTime: false,
       initialView: 'dayGridMonth',

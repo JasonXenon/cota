@@ -21,7 +21,7 @@ $error = isset($_GET['error']) ? $_GET['error'] : '';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
+    <meta name="description" content="Découvrez notre sélection de jeux pour le coaching. Prenez rendez-vous pour vous entraîner sur votre jeu favori avec nos experts. Explorez notre section 'Accueil' dès maintenant.">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.101.0">
     <title>CoTa · Accueil</title>
