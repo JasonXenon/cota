@@ -20,6 +20,7 @@ if((isset($_SESSION['log']))){
     <link href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css' rel='stylesheet'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="website icon" type="images/png" sizes="196x196" href="images/cota-logo.png">
     <title>CoTa · Galerie</title>
 </head>
 
@@ -52,7 +53,7 @@ if((isset($_SESSION['log']))){
     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-  <main class="form-signin w-100 m-auto">
+  <section class="form-signin w-100 m-auto">
   <form action="..\controller\login.php" method="post">
     <h2 class="h3 mb-3 fw-normal text-white text-center">Connectez-vous !</h2>
 
@@ -66,7 +67,7 @@ if((isset($_SESSION['log']))){
     </div>
     <button class="w-100 btn btn-lg btn-warning mt-3" type="submit">Se connecter</button>
   </form>
-</main>
+</section>
   </div>
 </div>
 
@@ -81,7 +82,7 @@ if((isset($_SESSION['log']))){
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>  
               <div class="offcanvas-body">
-              <main class="form-signin w-100 m-auto">
+              <section class="form-signin w-100 m-auto">
                 <form action="../controller/inscription.php" method="post" id="inscriptionForm">
                   <h2 class="h3 mb-3 fw-normal text-white text-center">Inscrivez-vous !</h2>
 
@@ -115,7 +116,7 @@ if((isset($_SESSION['log']))){
                   <p id="password-match"></p>
                   <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">S'inscrire</button>
                 </form>
-              </main>
+              </section>
               </div>
             </div>
 
@@ -148,7 +149,7 @@ if((isset($_SESSION['log']))){
     </div>
   </header>
 
-
+<main>
   <div class="d-flex justify-content-center">
     <h4 class="fs-6"><button id="r6Button" class="btn btn-outline-light mx-3">R6: Siege</button></h4>
     <h4 class="fs-6"><button id="csgoButton" class="btn btn-outline-light mx-3">CS:GO</button></h4>
@@ -325,6 +326,7 @@ if((isset($_SESSION['log']))){
     </div>
   </div>
 </section>
+</main>
     
 
 

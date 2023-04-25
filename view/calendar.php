@@ -25,6 +25,7 @@ if((isset($_SESSION['log']))){
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/fullcalendar.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="website icon" type="images/png" sizes="196x196" href="images/cota-logo.png">
     <title>CoTa · Rendez-vous</title>
 </head>
 
@@ -59,7 +60,7 @@ if((isset($_SESSION['log']))){
     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-  <main class="form-signin w-100 m-auto">
+  <section class="form-signin w-100 m-auto">
   <form action="..\controller\login.php" method="post">
     <h2 class="h3 mb-3 fw-normal text-white text-center">Connectez-vous !</h2>
 
@@ -73,7 +74,7 @@ if((isset($_SESSION['log']))){
     </div>
     <button class="w-100 btn btn-lg btn-warning mt-3" type="submit">Se connecter</button>
   </form>
-</main>
+</section>
   </div>
 </div>
 
@@ -88,7 +89,7 @@ if((isset($_SESSION['log']))){
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>  
               <div class="offcanvas-body">
-              <main class="form-signin w-100 m-auto">
+              <section class="form-signin w-100 m-auto">
                 <form action="../controller/inscription.php" method="post" id="inscriptionForm">
                   <h2 class="h3 mb-3 fw-normal text-white text-center">Inscrivez-vous !</h2>
 
@@ -122,7 +123,7 @@ if((isset($_SESSION['log']))){
                   <p id="password-match"></p>
                   <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">S'inscrire</button>
                 </form>
-              </main>
+              </section>
               </div>
             </div>
 
@@ -172,7 +173,7 @@ if((isset($_SESSION['log']))){
       </div>      
       <div class="collapse" id="collapseExample">
         <div class="card card-body text-bg-dark">
-        <p class="text-white mb-2">1. Le rendez-vous doit être établis au moins 24h à l'avance.</p>
+        <p class="text-white mb-2">1. Le rendez-vous doit être établi au moins 24h à l'avance.</p>
         <p class="text-white mb-2">2. Lors de la prise de rendez-vous, votre pseudo sera visible par tous.</p>
         <p class="text-white mb-2">3. Lors de la prise de rendez-vous, un de nos coach, en fonction du jeu, vous contactera par message privé.</p>
         <p class="text-white">4. L'usurpation d'identité est passible de beaucoup de soucis.</p>
@@ -250,9 +251,9 @@ if((isset($_SESSION['log']))){
         <h5 class="modal-title" id="exampleModalLabel">Comment prendre rendez-vous ?</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body text-bg-dark">
-        <p class="text-center fs-4 text-white">Connectez-vous via ce <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" class="btn btn-outline-light mt-3">lien</button></p>
-        <p class="text-center fs-4 text-white">Inscrivez-vous via ce <button class="btn btn-outline-light mt-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight">lien</button></p>
+      <div class="modal-body text-bg-dark d-flex justify-content-evenly">
+        <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" class="btn btn-outline-light mt-3">Connexion</button>
+        <button class="btn btn-outline-light mt-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight">Inscription</button>
       </div>
       </div>
     </div>

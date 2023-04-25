@@ -26,6 +26,7 @@ $error = isset($_GET['error']) ? $_GET['error'] : '';
     <meta name="generator" content="Hugo 0.101.0">
     <title>CoTa · Accueil</title>
     <link href="view/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="website icon" type="images/png" sizes="196x196" href="view/images/cota-logo.png">
   </head>
 
 

@@ -44,6 +44,7 @@ if (isset($_SESSION['log']['userID'])) {
     <title>CoTa · Modification de profil</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="website icon" type="images/png" sizes="196x196" href="images/cota-logo.png">
 </head>
 <body class="text-bg-dark">
     <div class="container mt-5">

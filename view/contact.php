@@ -21,6 +21,7 @@ if((isset($_SESSION['log']))){
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="website icon" type="images/png" sizes="196x196" href="images/cota-logo.png">
     <title>CoTa · Contact</title>
 </head>
 
@@ -54,7 +55,7 @@ if((isset($_SESSION['log']))){
     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-  <main class="form-signin w-100 m-auto">
+  <section class="form-signin w-100 m-auto">
   <form action="..\controller\login.php" method="post">
     <h2 class="h3 mb-3 fw-normal text-white text-center">Connectez-vous !</h2>
 
@@ -68,7 +69,7 @@ if((isset($_SESSION['log']))){
     </div>
     <button class="w-100 btn btn-lg btn-warning mt-3" type="submit">Se connecter</button>
   </form>
-</main>
+</secti>
   </div>
 </div>
 
@@ -83,7 +84,7 @@ if((isset($_SESSION['log']))){
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>  
               <div class="offcanvas-body">
-              <main class="form-signin w-100 m-auto">
+              <section class="form-signin w-100 m-auto">
                 <form action="../controller/inscription.php" method="post" id="inscriptionForm">
                   <h2 class="h3 mb-3 fw-normal text-white text-center">Inscrivez-vous !</h2>
 
@@ -117,7 +118,7 @@ if((isset($_SESSION['log']))){
                   <p id="password-match"></p>
                   <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">S'inscrire</button>
                 </form>
-              </main>
+              </section>
               </div>
             </div>
 
@@ -153,6 +154,8 @@ if((isset($_SESSION['log']))){
     </div>
   </header>
 
+
+<main>
   <div class="container">
   <h1 class="mt-4 mb-3">Contactez-nous</h1>
   <h3 class="h6 mb-3 text-center">Vous rencontrez un souci quelconque ou vous voulez faire une suggestion pour améliorer notre site ? Retrouvez toutes les informations de contact ci-dessous.</h3>
@@ -183,6 +186,7 @@ if((isset($_SESSION['log']))){
     </div>
   </div>
 </div>
+</main>
 
 
 
