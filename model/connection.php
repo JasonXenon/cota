@@ -1,6 +1,11 @@
 <?php
     //PAGE DE CONNECTION A LA DB
 
+    // $username = "jasonlve";
+    // $password = "Difbec141021";
+    // $host = "jasonlve.mysql.db";
+    // $dbname = "jasonlve";
+
     $username = "root";
     $password = "";
     $host = "localhost";

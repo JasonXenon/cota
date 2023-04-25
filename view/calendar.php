@@ -175,7 +175,7 @@ if((isset($_SESSION['log']))){
         <div class="card card-body text-bg-dark">
         <p class="text-white mb-2">1. Le rendez-vous doit être établi au moins 24h à l'avance.</p>
         <p class="text-white mb-2">2. Lors de la prise de rendez-vous, votre pseudo sera visible par tous.</p>
-        <p class="text-white mb-2">3. Lors de la prise de rendez-vous, un de nos coach, en fonction du jeu, vous contactera par message privé.</p>
+        <p class="text-white mb-2">3. Lors de la prise de rendez-vous, un de nos coachs, en fonction du jeu, vous contactera par message privé.</p>
         <p class="text-white">4. L'usurpation d'identité est passible de beaucoup de soucis.</p>
         </div>
       </div>
